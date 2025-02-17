@@ -1,7 +1,5 @@
 FROM scratch
 
-COPY idle /idle
+COPY main /main
 
-COPY FLAG.txt /tmp/tmp.jgnfqIcitl/FLAG.txt
-
-ENTRYPOINT ["/idle"]
+ENTRYPOINT ["/main"]

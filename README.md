@@ -7,7 +7,7 @@ Oh non ! Ce container n'a aucun binaire mais je voudrais vraiment bien lire le c
 # Création :
 
 ## Compilation du binaire qui attend :
-CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o idle idle.go
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o main main.go
 
 ## Docker :
 docker build -t ctf-ssi .
@@ -31,6 +31,6 @@ docker exec -it <container> /busybox whoami
 docker exec -it <container> /busybox find / -name FLAG.txt
 
 Ensuite, soit on copie le fichier, soit on le cat directement :
-docker exec -it <container> /busybox cat /tmp/tmp.jgnfqIcitl/FLAG.txt
+docker exec -it <container> /busybox cat /f0rvBC0RkA/FLAG.txt
 OU
-docker cp <container>:/tmp/tmp.jgnfqIcitl/FLAG.txt .
+docker cp <container>:/f0rvBC0RkA/FLAG.txt .
